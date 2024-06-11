@@ -19,12 +19,9 @@ async function GET(request) {
   }
 }
 
-// POST function for adding a new rating
 async function POST(request) {
   try {
     const { respondent_identifier, course_name, rating } = await request.json();
-
-    console.log(respondent_identifier, course_name, rating); // Log received data
 
     const result = await db.query("INSERT INTO ratings SET ?", {
       respondent_identifier,

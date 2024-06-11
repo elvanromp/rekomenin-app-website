@@ -1,7 +1,6 @@
 const { NextResponse } = require("next/server");
 const db = require("../../config/db");
 
-// GET function for fetching all skill assessments
 async function GET() {
   try {
     const results = await db.query("SELECT * FROM skill_assessment");

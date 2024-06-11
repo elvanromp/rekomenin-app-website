@@ -1,12 +1,9 @@
 const { NextResponse } = require("next/server");
 const db = require("../../config/db");
 
-// GET function for fetching learning paths
 async function GET() {
   try {
     const results = await db.query("SELECT * FROM learning_path");
-
-    console.log(results); // Log results to console for debugging
 
     return NextResponse.json(results);
   } catch (error) {
@@ -16,7 +13,6 @@ async function GET() {
   }
 }
 
-// POST function for adding a new learning path
 async function POST(request) {
   try {
     const { learning_path_name } = await request.json();
