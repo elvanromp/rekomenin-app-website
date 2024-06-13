@@ -30,7 +30,6 @@ export function SidebarDesktop(props: SidebarDesktopProps) {
                 </SidebarButton>
               </Link>
             ))}
-            {props.sidebarItems.extras}
           </div>
        
         </div>

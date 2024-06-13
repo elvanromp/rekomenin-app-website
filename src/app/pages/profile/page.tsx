@@ -117,18 +117,20 @@ const Profile = () => {
             const progress = getProgressPercentage(completedCourses, total);
 
             return (
-              <div key={learningPath} className="mb-4">
-                <div className="grid grid-cols-12 mb-1">
-                  <div className='col-span-10'><span className="font-medium">{learningPath}</span></div>
-                  <div className='col-span-2'><span>{completedCourses} / {total}</span></div>
+              <div key={learningPath} className="mb-4 flex items-start">
+                <div>
+                  <div className="grid grid-cols-12 mb-1 h-fit">
+                    <div className='col-span-10'><span className="font-medium">{learningPath}</span></div>
+                    <div className='col-span-2'><span>{completedCourses} / {total}</span></div>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-4">
+                    <div
+                      className="bg-blue-600 h-4 rounded-full"
+                      style={{ width: `${progress}%` }}
+                    ></div>
+                  </div>
+                  <div className="text-right text-sm text-gray-600 mt-1">{Math.round(progress)}%</div>
                 </div>
-                <div className="w-full bg-gray-200 rounded-full h-4">
-                  <div
-                    className="bg-blue-600 h-4 rounded-full"
-                    style={{ width: `${progress}%` }}
-                  ></div>
-                </div>
-                <div className="text-right text-sm text-gray-600 mt-1">{Math.round(progress)}%</div>
               </div>
             );
           })}
