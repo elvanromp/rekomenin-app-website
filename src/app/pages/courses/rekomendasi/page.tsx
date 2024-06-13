@@ -26,20 +26,14 @@ const Rekomendasi: React.FC = () => {
 
     fetchUserPaths();
   }, []);
-
-  const handlePathClick = (path: string) => {
-    localStorage.setItem('selectedLearningPath', path);
-    router.push("/pages/courses/skill-assessment");
-  };
-
   return (
     <div className="space-y-6">
       <h1>Rekomendasi Learning Path</h1>
-      <div className="grid grid-flow-col auto-cols-max">
+      <div className="grid grid-cols-4">
         {topPaths.map((path, index) => (
-          <Link href={`/pages/courses/quiz/${path}`} key={index}>
-            <button className="flex bg-[#FAC19E] p-3 mr-4 w-72 items-center justify-between rounded-lg">
-              <p className="m-0">{path}</p>
+          <Link href={`/pages/courses/${path}`} key={index}>
+            <button className="flex bg-[#E1F4E8] p-3 mr-4 w-72 items-center justify-between rounded-lg">
+              <p className="m-0 text-[#2D6A4F]">{path}</p>
               <ArrowRight/>
             </button>
           </Link>

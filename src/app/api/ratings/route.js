@@ -11,7 +11,7 @@ async function GET(request) {
 
     const results = await db.query("SELECT * FROM ratings WHERE respondent_identifier = ?", [id_user]);
 
-    return NextResponse.json(results);
+    return NextResponse.json(results[0]);
   } catch (error) {
     console.error("Error executing GET request:", error);
 

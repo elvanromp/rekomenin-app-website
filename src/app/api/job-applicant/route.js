@@ -5,7 +5,7 @@ async function GET() {
   try {
     const results = await db.query("SELECT * FROM job_applicant");
 
-    return NextResponse.json(results);
+    return NextResponse.json(results[0]);
   } catch (error) {
     console.error("Error executing GET request:", error);
 

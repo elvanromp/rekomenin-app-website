@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
-import Context from '../../context/context';
+import Context from '../../../../context/context';
 import { Star, Clock, BarChart } from 'lucide-react';
 import Link from 'next/link';
 import {
