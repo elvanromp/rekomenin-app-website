@@ -8,7 +8,7 @@ async function GET(request) {
       return NextResponse.json({ message: 'id_user is required' }, { status: 400 });
     }
 
-    const results = await db.query("SELECT learning_path FROM score WHERE id_user = ?", [id_user]);
+    const results = await db.query("SELECT id_user, learning_path, assessment_point FROM score WHERE id_user = ?", [id_user]);
 
     return NextResponse.json(results[0]);
   } catch (error) {
@@ -20,12 +20,21 @@ async function GET(request) {
 
 async function POST(request) {
   try {
-    const { id_user, learning_path, assessment_point } = await request.json();
+    const { id_user, learning_path, assessment_point, action } = await request.json();
 
-    const result = await db.query(
-      "UPDATE score SET assessment_point = ? WHERE id_user = ? AND learning_path = ?",
-      [assessment_point, id_user, learning_path]
-    );
+    var result;
+    if(action=="update"){
+      result = await db.query(
+        "UPDATE score SET assessment_point = ? WHERE id_user = ? AND learning_path = ?",
+        [assessment_point, id_user, learning_path]
+      );
+    } else {
+      result = await db.query("INSERT INTO score SET ?", {
+        id_user, 
+        learning_path, 
+        assessment_point, 
+      });
+    }
 
     return NextResponse.json({
       id_user,

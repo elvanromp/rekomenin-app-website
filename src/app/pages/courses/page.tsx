@@ -91,6 +91,7 @@ const CoursePage = () => {
     const assessmentScore = await fetchAssessmentScore()
     assessmentScore.forEach((rowAssessment: any) => {
       const assessmentPoint = rowAssessment.assessment_point
+      console.log(rowAssessment)
       var level="";
       if (assessmentPoint != null) {
         if (assessmentPoint>75){
