@@ -96,7 +96,7 @@ const Result: React.FC = () => {
       <h3>Rekomendasi Course</h3>
       <div className='flex overflow-x-auto px-4'>
           {allCourses.map((course: any) => (
-            <div key={course.id} className='course course-card mr-5 p-4 bg-white my-5 w-[320px]'>
+            <div key={course.id} className='course course-card mr-5 p-4 w-80 bg-white my-5 w-[320px]'>
               <div className='min-h-[70px]'>
                 <h3 className='title'>
                   {course.name}

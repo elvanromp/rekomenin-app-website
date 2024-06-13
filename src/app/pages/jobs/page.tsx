@@ -82,10 +82,10 @@ const Jobs = () => {
     <div>
       <div>
       {ratings.length == 0?
-        <p>Ambil course untuk dapatkan rekomendasi sekarang!</p>:
+        <h2 className="font-bolder text-[#1B4332] text-3xl mb-4">Ambil course untuk dapatkan rekomendasi sekarang!</h2>:
         <div>
-          <p>Rekomendasi Job</p>
-          <div className='flex overflow-x-scroll'>
+          <h2 className="font-bolder text-[#1B4332] text-3xl mb-4">Rekomendasi Job</h2>
+          <div className='flex overflow-x-scroll px-3'>
             {recommendations.map((item) => (
               <div key={item.id} className='course course-card mr-5 p-4 bg-white my-5 w-[320px]'>
                 <div className='min-h-[70px]'>
@@ -111,7 +111,7 @@ const Jobs = () => {
       </div>
       <div>
         <div className='grid grid-cols-3'>
-          {recommendations.map((item) => (
+          {allJobs.slice(0, 20).map((item) => (
             <div key={item.id} className='course course-card mr-5 p-4 bg-white my-5 w-[320px]'>
               <div className='min-h-[70px]'>
                 <h3 className='title'>
