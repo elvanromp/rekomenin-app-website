@@ -148,7 +148,7 @@ const SkillAssessment: React.FC = () => {
           case "INTERMEDIATE":
             weight = 12;
             break;
-          case "ADVANCED":
+          case "PROFESSIONAL":
             weight = 16;
             break;
           default:

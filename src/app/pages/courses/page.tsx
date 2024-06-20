@@ -145,7 +145,7 @@ const CoursePage = () => {
         Rekomendasi Course
         <div className='flex overflow-x-auto px-4'>
           {recommendationsQuiz.map((course: any) => (
-            <div key={course.id} className='course course-card mr-5 p-4 w-80 bg-white my-5 w-[320px]'>
+            <div key={course.id} className='course course-card mr-5 p-4 bg-white my-5 w-[320px]'>
               <div className='min-h-[70px]'>
                 <h3 className='title'>
                   {course.name}
@@ -186,7 +186,7 @@ const CoursePage = () => {
         Orang lain juga Menyukai
         <div className='flex overflow-x-auto px-4'>
           {recommendations.map((course: any) => (
-            <div key={course.id} className='course course-card mr-5 p-4 w-80 bg-white my-5 w-[320px]'>
+            <div key={course.id} className='course course-card mr-5 p-4 bg-white my-5 w-[320px]'>
               <div className='min-h-[70px]'>
                 <h3 className='title'>
                   {course.name}
