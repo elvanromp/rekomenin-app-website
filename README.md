@@ -21,10 +21,10 @@ To get started with this Next.js project, follow these steps:
 
    Move into the directory of the cloned project:
    ```bash
-   cd repo-name
+   cd rekomenin-app-website
    ```
 
-4. **Install Dependencies**
+3. **Install Dependencies**
 
    Install all required dependencies using npm or yarn:
 
@@ -36,7 +36,7 @@ To get started with this Next.js project, follow these steps:
    yarn install
    ```
 
-5. **Run the Development Server**
+4. **Run the Development Server**
 
    Start the development server to launch the Next.js application:
 
@@ -48,7 +48,7 @@ To get started with this Next.js project, follow these steps:
    yarn dev
    ```
 
-7. **Open the Application in Your Browser**
+5. **Open the Application in Your Browser**
    
    Open your browser and navigate to http://localhost:3000 to view the running application.
 
