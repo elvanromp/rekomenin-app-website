@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Rekomenin 
+# Rekomenin
+Rekomenin adalah
 
-## Getting Started
+Fitur
+Membaca dan menganalisis file CSV
+Menghitung statistik dasar seperti rata-rata, median, dan standar deviasi
+Menampilkan ringkasan statistik dalam format yang mudah dibaca
 
-First, run the development server:
+Instalasi
+Untuk menggunakan DataAnalyzer, Anda perlu menginstal dependensi yang diperlukan. Anda bisa menggunakan pip untuk menginstalnya.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+pip install -r requirements.txt
+Penggunaan
+Berikut adalah contoh bagaimana menggunakan DataAnalyzer dalam skrip Python:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+python
+Copy code
+from data_analyzer import DataAnalyzer
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Inisialisasi objek DataAnalyzer dengan path ke file CSV
+analyzer = DataAnalyzer('data.csv')
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Membaca data dan menghasilkan statistik
+analyzer.read_data()
+stats = analyzer.generate_statistics()
 
-## Learn More
+Menampilkan statistik
+print(stats)
+Struktur Direktori
+Berikut adalah struktur direktori proyek ini:
 
-To learn more about Next.js, take a look at the following resources:
+kotlin
+Copy code
+DataAnalyzer/
+├── data_analyzer.py
+├── README.md
+├── requirements.txt
+└── data/
+    └── data.csv
+Kontribusi
+Kami menyambut kontribusi dari siapa saja. Untuk berkontribusi, ikuti langkah-langkah berikut:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Fork repositori ini
+Buat branch fitur baru (git checkout -b fitur-baru)
+Commit perubahan Anda (git commit -am 'Menambahkan fitur baru')
+Push ke branch (git push origin fitur-baru)
+Buat Pull Request
+Lisensi
+Proyek ini dilisensikan di bawah lisensi MIT - lihat file LICENSE untuk detail lebih lanjut.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Kontak
+Jika Anda memiliki pertanyaan atau masukan, silakan hubungi kami di email@example.com.
