@@ -1,54 +1,46 @@
-## Rekomenin 
 # Rekomenin
-Rekomenin adalah
+Rekomenin is a web Application designed to prepare users for a career in the technology industry and help them achieve their professional aspirations.
 
-Fitur
-Membaca dan menganalisis file CSV
-Menghitung statistik dasar seperti rata-rata, median, dan standar deviasi
-Menampilkan ringkasan statistik dalam format yang mudah dibaca
+## Features
+- Skill Assessment - Feature to determine the user's proficiency
+- User Profile Analysis - Feature to understand the user's interests and abilities
+- Course Recommendations - Course Recommendation based on user’s activities, and interactions
+- Job Opening Recommendations - Job Recommendation based on user’s activities and abilities
 
-Instalasi
-Untuk menggunakan DataAnalyzer, Anda perlu menginstal dependensi yang diperlukan. Anda bisa menggunakan pip untuk menginstalnya.
+## Installation
+To get started with this Next.js project, follow these steps:
 
-```bash
-pip install -r requirements.txt
-Penggunaan
-Berikut adalah contoh bagaimana menggunakan DataAnalyzer dalam skrip Python:
+1. **Clone the Repository**
 
-python
-Copy code
-from data_analyzer import DataAnalyzer
+   Clone this repository to your local machine using git:
 
-Inisialisasi objek DataAnalyzer dengan path ke file CSV
-analyzer = DataAnalyzer('data.csv')
+   ```bash
+   git clone https://github.com/elvanromp/rekomenin-app-website.git
+   
+2. **Navigate to the Project Directory**
 
-Membaca data dan menghasilkan statistik
-analyzer.read_data()
-stats = analyzer.generate_statistics()
+Move into the directory of the cloned project:
+cd repo-name
 
-Menampilkan statistik
-print(stats)
-Struktur Direktori
-Berikut adalah struktur direktori proyek ini:
+3. **Install Dependencies**
 
-kotlin
-Copy code
-DataAnalyzer/
-├── data_analyzer.py
-├── README.md
-├── requirements.txt
-└── data/
-    └── data.csv
-Kontribusi
-Kami menyambut kontribusi dari siapa saja. Untuk berkontribusi, ikuti langkah-langkah berikut:
+Install all required dependencies using npm or yarn:
 
-Fork repositori ini
-Buat branch fitur baru (git checkout -b fitur-baru)
-Commit perubahan Anda (git commit -am 'Menambahkan fitur baru')
-Push ke branch (git push origin fitur-baru)
-Buat Pull Request
-Lisensi
-Proyek ini dilisensikan di bawah lisensi MIT - lihat file LICENSE untuk detail lebih lanjut.
+npm install
+or
+yarn install
 
-Kontak
-Jika Anda memiliki pertanyaan atau masukan, silakan hubungi kami di email@example.com.
+4. **Run the Development Server**
+
+Start the development server to launch the Next.js application:
+
+npm run dev
+or
+yarn dev
+
+5. **Open the Application in Your Browser**
+Open your browser and navigate to http://localhost:3000 to view the running application.
+
+
+## Contact
+If you have any questions or feedback, please contact us at c007d4ky0563@bangkit.academy
