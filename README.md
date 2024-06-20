@@ -19,28 +19,39 @@ To get started with this Next.js project, follow these steps:
    
 2. **Navigate to the Project Directory**
 
-Move into the directory of the cloned project:
-cd repo-name
+   Move into the directory of the cloned project:
+   ```bash
+   cd repo-name
+   ```
 
-3. **Install Dependencies**
+4. **Install Dependencies**
 
-Install all required dependencies using npm or yarn:
+   Install all required dependencies using npm or yarn:
 
-npm install
-or
-yarn install
+   ```bash
+   npm install
+   ```
+   or
+   ```bash
+   yarn install
+   ```
 
-4. **Run the Development Server**
+5. **Run the Development Server**
 
-Start the development server to launch the Next.js application:
+   Start the development server to launch the Next.js application:
 
-npm run dev
-or
-yarn dev
+   ```bash
+   npm run dev
+   ```
+   or
+   ```bash
+   yarn dev
+   ```
 
-5. **Open the Application in Your Browser**
-Open your browser and navigate to http://localhost:3000 to view the running application.
+7. **Open the Application in Your Browser**
+   
+   Open your browser and navigate to http://localhost:3000 to view the running application.
 
 
 ## Contact
-If you have any questions or feedback, please contact us at c007d4ky0563@bangkit.academy
+If you have any questions or feedback, please contact us at elvanro2015@gmail.com
